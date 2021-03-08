@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import SwiftExtension
+@testable import SwiftFoundationExtension
 
 final class FloatTests: XCTestCase {
     
@@ -58,6 +58,38 @@ final class FloatTests: XCTestCase {
         value = .pi
         
         XCTAssertTrue(value.isValidAndNotZero, "Value is invalid")
+    }
+    
+    func testInitSFloatBitPattern() {
+        var source: UInt16 = 0x07FF
+        var value = Float(sFloatBitPattern: source)
+        
+        XCTAssertTrue(value.isNaN, "SFloat is not NAN")
+        
+        source = 0x0800
+        value = Float(sFloatBitPattern: source)
+        
+        XCTAssertTrue(value.isNaN, "SFloat is not NAN")
+        
+        source = 0x0801
+        value = Float(sFloatBitPattern: source)
+        
+        XCTAssertTrue(value.isNaN, "SFloat is not NAN")
+        
+        source = 0x07FE
+        value = Float(sFloatBitPattern: source)
+        
+        XCTAssertTrue(value.isInfinite, "SFloat is not infinity")
+        
+        source = 0x0802
+        value = Float(sFloatBitPattern: source)
+        
+        XCTAssertTrue(value.isInfinite, "SFloat is not negative infinity")
+        
+        source = 0xE047
+        value = Float(sFloatBitPattern: source)
+        
+        XCTAssertEqual(value, 0.71, "SFloat is not 0.71")
     }
     
     func testRoundToPlaces() {

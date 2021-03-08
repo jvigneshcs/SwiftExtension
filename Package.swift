@@ -10,6 +10,9 @@ let package = Package(
         .library(
             name: "SwiftFoundationExtension",
             targets: ["SwiftFoundationExtension"]),
+        .library(
+            name: "SwiftCoreBluetoothExtension",
+            targets: ["SwiftCoreBluetoothExtension"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -22,9 +25,17 @@ let package = Package(
             name: "SwiftFoundationExtension",
             dependencies: [],
             path: "Sources/SwiftExtension/Foundation"),
+        .target(
+            name: "SwiftCoreBluetoothExtension",
+            dependencies: [],
+            path: "Sources/SwiftExtension/CoreBluetooth"),
         .testTarget(
-            name: "SwiftExtensionTests",
+            name: "SwiftFoundationExtensionTests",
             dependencies: ["SwiftFoundationExtension"],
             path: "Tests/SwiftExtensionTests/Foundation"),
+        .testTarget(
+            name: "SwiftCoreBluetoothExtensionTests",
+            dependencies: ["SwiftCoreBluetoothExtension"],
+            path: "Tests/SwiftExtensionTests/CoreBluetooth"),
     ]
 )
