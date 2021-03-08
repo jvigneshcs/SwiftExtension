@@ -13,6 +13,9 @@ let package = Package(
         .library(
             name: "SwiftCoreBluetoothExtension",
             targets: ["SwiftCoreBluetoothExtension"]),
+        .library(
+            name: "SwiftUIKitExtension",
+            targets: ["SwiftUIKitExtension"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -29,6 +32,10 @@ let package = Package(
             name: "SwiftCoreBluetoothExtension",
             dependencies: [],
             path: "Sources/SwiftExtension/CoreBluetooth"),
+        .target(
+            name: "SwiftUIKitExtension",
+            dependencies: [],
+            path: "Sources/SwiftExtension/UIKit"),
         .testTarget(
             name: "SwiftFoundationExtensionTests",
             dependencies: ["SwiftFoundationExtension"],
