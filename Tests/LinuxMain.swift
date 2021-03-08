@@ -1,7 +1,9 @@
 import XCTest
 
-import SwiftExtensionTests
+import SwiftFoundationExtensionTests
+import SwiftCoreBluetoothExtensionTests
 
 var tests = [XCTestCaseEntry]()
-tests += SwiftExtensionTests.allTests()
+tests += SwiftFoundationExtensionTests.allTests()
+tests += SwiftCoreBluetoothExtensionTests.allTests()
 XCTMain(tests)

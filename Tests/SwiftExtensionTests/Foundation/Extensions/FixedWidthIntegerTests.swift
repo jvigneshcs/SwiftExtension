@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import SwiftExtension
+@testable import SwiftFoundationExtension
 
 final class FixedWidthIntegerTests: XCTestCase {
     
