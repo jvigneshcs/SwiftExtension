@@ -8,46 +8,43 @@ import UIKit
 
 public extension UIColor {
     
-    convenience init(red: Int,
-                     green: Int,
-                     blue: Int,
+    private static func validRGBAComponent(for value: CGFloat) -> CGFloat {
+        max(0.0, min(1.0, value))
+    }
+    
+    convenience init(red: UInt8,
+                     green: UInt8,
+                     blue: UInt8,
                      alpha: CGFloat = 1.0) {
-        assert(red >= 0 && red <= 255, "Invalid red component")
-        assert(green >= 0 && green <= 255, "Invalid green component")
-        assert(blue >= 0 && blue <= 255, "Invalid blue component")
-        assert(alpha >= 0.0 && alpha <= 1.0, "Invalid alpha component")
-        
         self.init(red: CGFloat(red) / 255.0,
                   green: CGFloat(green) / 255.0,
                   blue: CGFloat(blue) / 255.0,
-                  alpha: alpha)
+                  alpha: UIColor.validRGBAComponent(for: alpha))
     }
     
     convenience init(gray: CGFloat,
                      alpha: CGFloat = 1.0) {
-        assert(gray >= 0.0 && gray <= 1.0, "Invalid gray component")
-        assert(alpha >= 0.0 && alpha <= 1.0, "Invalid alpha component")
+        let validGray = UIColor.validRGBAComponent(for: gray)
         
-        self.init(red: gray,
-                  green: gray,
-                  blue: gray,
-                  alpha: alpha)
+        self.init(red: validGray,
+                  green: validGray,
+                  blue: validGray,
+                  alpha: UIColor.validRGBAComponent(for: alpha))
     }
     
-    convenience init(gray: Int,
+    convenience init(gray: UInt8,
                      alpha: CGFloat = 1.0) {
         self.init(red: gray,
                   green: gray,
                   blue: gray,
-                  alpha: alpha)
+                  alpha: UIColor.validRGBAComponent(for: alpha))
     }
     
     convenience init(hex: Int,
                      alpha: CGFloat = 1.0) {
-        self.init(
-            red: (hex >> 16) & 0xFF,
-            green: (hex >> 8) & 0xFF,
-            blue: hex & 0xFF,
-            alpha: alpha)
+        self.init(red: UInt8((hex >> 16) & 0xFF),
+                  green: UInt8((hex >> 8) & 0xFF),
+                  blue: UInt8(hex & 0xFF),
+                  alpha: UIColor.validRGBAComponent(for: alpha))
     }
 }
