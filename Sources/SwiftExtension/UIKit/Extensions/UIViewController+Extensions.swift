@@ -71,12 +71,12 @@ public extension UIViewController {
                         title: String?,
                         subtitle: String?,
                         body: String,
-                        badge: NSNumber?,
+                        badge: NSNumber? = nil,
                         sound: UNNotificationSound? = nil,
-                        launchImageName: String?,
+                        launchImageName: String? = nil,
                         attachments: [UNNotificationAttachment]? = nil,
-                        categoryIdentifier: String?,
-                        threadIdentifier: String?) {
+                        categoryIdentifier: String? = nil,
+                        threadIdentifier: String? = nil) {
         
         UNUserNotificationCenter.current()
             .requestAuthorization(options: options) { [weak self] (granted, error) in
