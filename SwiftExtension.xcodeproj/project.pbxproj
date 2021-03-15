@@ -1,0 +1,1005 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"SwiftExtension::SwiftExtensionPackageTests::ProductTarget" /* SwiftExtensionPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_80 /* Build configuration list for PBXAggregateTarget "SwiftExtensionPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_83 /* PBXTargetDependency */,
+				OBJ_85 /* PBXTargetDependency */,
+			);
+			name = SwiftExtensionPackageTests;
+			productName = SwiftExtensionPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_100 /* DecimalRoundable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* DecimalRoundable.swift */; };
+		OBJ_106 /* BundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* BundleTests.swift */; };
+		OBJ_107 /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* CalendarTests.swift */; };
+		OBJ_108 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* DateTests.swift */; };
+		OBJ_109 /* FixedWidthIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* FixedWidthIntegerTests.swift */; };
+		OBJ_110 /* FloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* FloatTests.swift */; };
+		OBJ_111 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* StringTests.swift */; };
+		OBJ_112 /* BitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* BitTests.swift */; };
+		OBJ_114 /* SwiftFoundationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftExtension::SwiftFoundationExtension::Product" /* SwiftFoundationExtension.framework */; };
+		OBJ_121 /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* CALayer+Extensions.swift */; };
+		OBJ_122 /* NSMutableAttributedString+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* NSMutableAttributedString+Extenstions.swift */; };
+		OBJ_123 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* UIColor+Extensions.swift */; };
+		OBJ_124 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* UIImageView+Extensions.swift */; };
+		OBJ_125 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* UILabel+Extensions.swift */; };
+		OBJ_126 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* UIView+Extensions.swift */; };
+		OBJ_127 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* UIViewController+Extensions.swift */; };
+		OBJ_62 /* CBUUID+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* CBUUID+Extensions.swift */; };
+		OBJ_69 /* CBUUIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* CBUUIDTests.swift */; };
+		OBJ_71 /* SwiftCoreBluetoothExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftExtension::SwiftCoreBluetoothExtension::Product" /* SwiftCoreBluetoothExtension.framework */; };
+		OBJ_78 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_91 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Bundle+Extensions.swift */; };
+		OBJ_92 /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Calendar+Extensions.swift */; };
+		OBJ_93 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Data+Extensions.swift */; };
+		OBJ_94 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Date+Extensions.swift */; };
+		OBJ_95 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Double+Extensions.swift */; };
+		OBJ_96 /* FixedWidthInteger+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* FixedWidthInteger+Extensions.swift */; };
+		OBJ_97 /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Float+Extensions.swift */; };
+		OBJ_98 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* String+Extensions.swift */; };
+		OBJ_99 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Bit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B0BDE4325FF362C00B698FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftExtension::SwiftCoreBluetoothExtension";
+			remoteInfo = SwiftCoreBluetoothExtension;
+		};
+		9B0BDE4425FF362C00B698FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftExtension::SwiftFoundationExtension";
+			remoteInfo = SwiftFoundationExtension;
+		};
+		9B0BDE4825FF362E00B698FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftExtension::SwiftFoundationExtensionTests";
+			remoteInfo = SwiftFoundationExtensionTests;
+		};
+		9B0BDE4925FF362E00B698FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftExtension::SwiftCoreBluetoothExtensionTests";
+			remoteInfo = SwiftCoreBluetoothExtensionTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B0BDE4E25FF3CCC00B698FE /* GenerateXCFramework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateXCFramework.sh; sourceTree = "<group>"; };
+		OBJ_10 /* CBUUID+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CBUUID+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_13 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_14 /* Calendar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_15 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_16 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_18 /* FixedWidthInteger+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FixedWidthInteger+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_19 /* Float+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_22 /* Bit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit.swift; sourceTree = "<group>"; };
+		OBJ_24 /* DecimalRoundable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalRoundable.swift; sourceTree = "<group>"; };
+		OBJ_27 /* CALayer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_28 /* NSMutableAttributedString+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extenstions.swift"; sourceTree = "<group>"; };
+		OBJ_29 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_31 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_32 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_33 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_37 /* CBUUIDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBUUIDTests.swift; sourceTree = "<group>"; };
+		OBJ_40 /* BundleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleTests.swift; sourceTree = "<group>"; };
+		OBJ_41 /* CalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTests.swift; sourceTree = "<group>"; };
+		OBJ_42 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		OBJ_43 /* FixedWidthIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedWidthIntegerTests.swift; sourceTree = "<group>"; };
+		OBJ_44 /* FloatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatTests.swift; sourceTree = "<group>"; };
+		OBJ_45 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		OBJ_47 /* BitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitTests.swift; sourceTree = "<group>"; };
+		OBJ_54 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_55 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_56 /* cov.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = cov.sh; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		"SwiftExtension::SwiftCoreBluetoothExtension::Product" /* SwiftCoreBluetoothExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCoreBluetoothExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftExtension::SwiftCoreBluetoothExtensionTests::Product" /* SwiftCoreBluetoothExtensionTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftCoreBluetoothExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftExtension::SwiftFoundationExtension::Product" /* SwiftFoundationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftFoundationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftExtension::SwiftFoundationExtensionTests::Product" /* SwiftFoundationExtensionTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftFoundationExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftExtension::SwiftUIKitExtension::Product" /* SwiftUIKitExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftUIKitExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_113 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_114 /* SwiftFoundationExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_71 /* SwiftCoreBluetoothExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_11 /* SwiftFoundationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* Extensions */,
+				OBJ_21 /* Models */,
+				OBJ_23 /* Protocols */,
+			);
+			name = SwiftFoundationExtension;
+			path = Sources/SwiftExtension/Foundation;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_12 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* Bundle+Extensions.swift */,
+				OBJ_14 /* Calendar+Extensions.swift */,
+				OBJ_15 /* Data+Extensions.swift */,
+				OBJ_16 /* Date+Extensions.swift */,
+				OBJ_17 /* Double+Extensions.swift */,
+				OBJ_18 /* FixedWidthInteger+Extensions.swift */,
+				OBJ_19 /* Float+Extensions.swift */,
+				OBJ_20 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* Bit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_23 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* DecimalRoundable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		OBJ_25 /* SwiftUIKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_26 /* Extensions */,
+			);
+			name = SwiftUIKitExtension;
+			path = Sources/SwiftExtension/UIKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_26 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* CALayer+Extensions.swift */,
+				OBJ_28 /* NSMutableAttributedString+Extenstions.swift */,
+				OBJ_29 /* UIColor+Extensions.swift */,
+				OBJ_30 /* UIImageView+Extensions.swift */,
+				OBJ_31 /* UILabel+Extensions.swift */,
+				OBJ_32 /* UIView+Extensions.swift */,
+				OBJ_33 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* SwiftCoreBluetoothExtensionTests */,
+				OBJ_38 /* SwiftFoundationExtensionTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_35 /* SwiftCoreBluetoothExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* Extensions */,
+			);
+			name = SwiftCoreBluetoothExtensionTests;
+			path = Tests/SwiftExtensionTests/CoreBluetooth;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_36 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* CBUUIDTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_38 /* SwiftFoundationExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* Extensions */,
+				OBJ_46 /* Models */,
+			);
+			name = SwiftFoundationExtensionTests;
+			path = Tests/SwiftExtensionTests/Foundation;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_39 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* BundleTests.swift */,
+				OBJ_41 /* CalendarTests.swift */,
+				OBJ_42 /* DateTests.swift */,
+				OBJ_43 /* FixedWidthIntegerTests.swift */,
+				OBJ_44 /* FloatTests.swift */,
+				OBJ_45 /* StringTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_46 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_47 /* BitTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"SwiftExtension::SwiftUIKitExtension::Product" /* SwiftUIKitExtension.framework */,
+				"SwiftExtension::SwiftFoundationExtensionTests::Product" /* SwiftFoundationExtensionTests.xctest */,
+				"SwiftExtension::SwiftCoreBluetoothExtension::Product" /* SwiftCoreBluetoothExtension.framework */,
+				"SwiftExtension::SwiftCoreBluetoothExtensionTests::Product" /* SwiftCoreBluetoothExtensionTests.xctest */,
+				"SwiftExtension::SwiftFoundationExtension::Product" /* SwiftFoundationExtension.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_34 /* Tests */,
+				OBJ_48 /* Products */,
+				OBJ_54 /* LICENSE */,
+				OBJ_55 /* README.md */,
+				OBJ_56 /* cov.sh */,
+				9B0BDE4E25FF3CCC00B698FE /* GenerateXCFramework.sh */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* SwiftCoreBluetoothExtension */,
+				OBJ_11 /* SwiftFoundationExtension */,
+				OBJ_25 /* SwiftUIKitExtension */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* SwiftCoreBluetoothExtension */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Extensions */,
+			);
+			name = SwiftCoreBluetoothExtension;
+			path = Sources/SwiftExtension/CoreBluetooth;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* CBUUID+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"SwiftExtension::SwiftCoreBluetoothExtension" /* SwiftCoreBluetoothExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "SwiftCoreBluetoothExtension" */;
+			buildPhases = (
+				OBJ_61 /* Sources */,
+				OBJ_63 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCoreBluetoothExtension;
+			productName = SwiftCoreBluetoothExtension;
+			productReference = "SwiftExtension::SwiftCoreBluetoothExtension::Product" /* SwiftCoreBluetoothExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftExtension::SwiftCoreBluetoothExtensionTests" /* SwiftCoreBluetoothExtensionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_65 /* Build configuration list for PBXNativeTarget "SwiftCoreBluetoothExtensionTests" */;
+			buildPhases = (
+				OBJ_68 /* Sources */,
+				OBJ_70 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_72 /* PBXTargetDependency */,
+			);
+			name = SwiftCoreBluetoothExtensionTests;
+			productName = SwiftCoreBluetoothExtensionTests;
+			productReference = "SwiftExtension::SwiftCoreBluetoothExtensionTests::Product" /* SwiftCoreBluetoothExtensionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"SwiftExtension::SwiftFoundationExtension" /* SwiftFoundationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_87 /* Build configuration list for PBXNativeTarget "SwiftFoundationExtension" */;
+			buildPhases = (
+				OBJ_90 /* Sources */,
+				OBJ_101 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftFoundationExtension;
+			productName = SwiftFoundationExtension;
+			productReference = "SwiftExtension::SwiftFoundationExtension::Product" /* SwiftFoundationExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftExtension::SwiftFoundationExtensionTests" /* SwiftFoundationExtensionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_102 /* Build configuration list for PBXNativeTarget "SwiftFoundationExtensionTests" */;
+			buildPhases = (
+				OBJ_105 /* Sources */,
+				OBJ_113 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_115 /* PBXTargetDependency */,
+			);
+			name = SwiftFoundationExtensionTests;
+			productName = SwiftFoundationExtensionTests;
+			productReference = "SwiftExtension::SwiftFoundationExtensionTests::Product" /* SwiftFoundationExtensionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"SwiftExtension::SwiftPMPackageDescription" /* SwiftExtensionPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_74 /* Build configuration list for PBXNativeTarget "SwiftExtensionPackageDescription" */;
+			buildPhases = (
+				OBJ_77 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftExtensionPackageDescription;
+			productName = SwiftExtensionPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"SwiftExtension::SwiftUIKitExtension" /* SwiftUIKitExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_117 /* Build configuration list for PBXNativeTarget "SwiftUIKitExtension" */;
+			buildPhases = (
+				OBJ_120 /* Sources */,
+				OBJ_128 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIKitExtension;
+			productName = SwiftUIKitExtension;
+			productReference = "SwiftExtension::SwiftUIKitExtension::Product" /* SwiftUIKitExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftExtension" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"SwiftExtension::SwiftCoreBluetoothExtension" /* SwiftCoreBluetoothExtension */,
+				"SwiftExtension::SwiftCoreBluetoothExtensionTests" /* SwiftCoreBluetoothExtensionTests */,
+				"SwiftExtension::SwiftPMPackageDescription" /* SwiftExtensionPackageDescription */,
+				"SwiftExtension::SwiftExtensionPackageTests::ProductTarget" /* SwiftExtensionPackageTests */,
+				"SwiftExtension::SwiftFoundationExtension" /* SwiftFoundationExtension */,
+				"SwiftExtension::SwiftFoundationExtensionTests" /* SwiftFoundationExtensionTests */,
+				"SwiftExtension::SwiftUIKitExtension" /* SwiftUIKitExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_106 /* BundleTests.swift in Sources */,
+				OBJ_107 /* CalendarTests.swift in Sources */,
+				OBJ_108 /* DateTests.swift in Sources */,
+				OBJ_109 /* FixedWidthIntegerTests.swift in Sources */,
+				OBJ_110 /* FloatTests.swift in Sources */,
+				OBJ_111 /* StringTests.swift in Sources */,
+				OBJ_112 /* BitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_121 /* CALayer+Extensions.swift in Sources */,
+				OBJ_122 /* NSMutableAttributedString+Extenstions.swift in Sources */,
+				OBJ_123 /* UIColor+Extensions.swift in Sources */,
+				OBJ_124 /* UIImageView+Extensions.swift in Sources */,
+				OBJ_125 /* UILabel+Extensions.swift in Sources */,
+				OBJ_126 /* UIView+Extensions.swift in Sources */,
+				OBJ_127 /* UIViewController+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_62 /* CBUUID+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_69 /* CBUUIDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_78 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_91 /* Bundle+Extensions.swift in Sources */,
+				OBJ_92 /* Calendar+Extensions.swift in Sources */,
+				OBJ_93 /* Data+Extensions.swift in Sources */,
+				OBJ_94 /* Date+Extensions.swift in Sources */,
+				OBJ_95 /* Double+Extensions.swift in Sources */,
+				OBJ_96 /* FixedWidthInteger+Extensions.swift in Sources */,
+				OBJ_97 /* Float+Extensions.swift in Sources */,
+				OBJ_98 /* String+Extensions.swift in Sources */,
+				OBJ_99 /* Bit.swift in Sources */,
+				OBJ_100 /* DecimalRoundable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_115 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftExtension::SwiftFoundationExtension" /* SwiftFoundationExtension */;
+			targetProxy = 9B0BDE4425FF362C00B698FE /* PBXContainerItemProxy */;
+		};
+		OBJ_72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftExtension::SwiftCoreBluetoothExtension" /* SwiftCoreBluetoothExtension */;
+			targetProxy = 9B0BDE4325FF362C00B698FE /* PBXContainerItemProxy */;
+		};
+		OBJ_83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftExtension::SwiftFoundationExtensionTests" /* SwiftFoundationExtensionTests */;
+			targetProxy = 9B0BDE4825FF362E00B698FE /* PBXContainerItemProxy */;
+		};
+		OBJ_85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftExtension::SwiftCoreBluetoothExtensionTests" /* SwiftCoreBluetoothExtensionTests */;
+			targetProxy = 9B0BDE4925FF362E00B698FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftExtension.xcodeproj/SwiftFoundationExtensionTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftFoundationExtensionTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftExtension.xcodeproj/SwiftFoundationExtensionTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftFoundationExtensionTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftExtension.xcodeproj/SwiftUIKitExtension_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftUIKitExtension;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftUIKitExtension;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftExtension.xcodeproj/SwiftUIKitExtension_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftUIKitExtension;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftUIKitExtension;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftExtension.xcodeproj/SwiftCoreBluetoothExtension_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftCoreBluetoothExtension;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftCoreBluetoothExtension;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftExtension.xcodeproj/SwiftCoreBluetoothExtension_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftCoreBluetoothExtension;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftCoreBluetoothExtension;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftExtension.xcodeproj/SwiftCoreBluetoothExtensionTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftCoreBluetoothExtensionTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftExtension.xcodeproj/SwiftCoreBluetoothExtensionTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftCoreBluetoothExtensionTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode 12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode 12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftExtension.xcodeproj/SwiftFoundationExtension_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftFoundationExtension;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftFoundationExtension;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftExtension.xcodeproj/SwiftFoundationExtension_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftFoundationExtension;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftFoundationExtension;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_102 /* Build configuration list for PBXNativeTarget "SwiftFoundationExtensionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_103 /* Debug */,
+				OBJ_104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_117 /* Build configuration list for PBXNativeTarget "SwiftUIKitExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_118 /* Debug */,
+				OBJ_119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "SwiftExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_58 /* Build configuration list for PBXNativeTarget "SwiftCoreBluetoothExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_59 /* Debug */,
+				OBJ_60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_65 /* Build configuration list for PBXNativeTarget "SwiftCoreBluetoothExtensionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_66 /* Debug */,
+				OBJ_67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_74 /* Build configuration list for PBXNativeTarget "SwiftExtensionPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_75 /* Debug */,
+				OBJ_76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_80 /* Build configuration list for PBXAggregateTarget "SwiftExtensionPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_81 /* Debug */,
+				OBJ_82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_87 /* Build configuration list for PBXNativeTarget "SwiftFoundationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_88 /* Debug */,
+				OBJ_89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
