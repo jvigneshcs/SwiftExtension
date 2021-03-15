@@ -3,8 +3,14 @@
 # https://medium.com/swlh/how-to-build-xcframework-with-xcode-b3d0b3c08f43
 # https://www.baeldung.com/linux/use-command-line-arguments-in-bash-script
 # https://stackoverflow.com/a/31164417/618994
-
-
+#
+# Pass scheme name as -s argument to the script,
+# supported platforms with colon ; separated as -p argument to the script
+# Supported Platforms:
+# macOS,
+# iOS, iOS Simulator,
+# watchOS, watchOS Simulator
+# tvOS, tvOS Simulator
 while getopts p:s: flag
 do
     case "${flag}" in
