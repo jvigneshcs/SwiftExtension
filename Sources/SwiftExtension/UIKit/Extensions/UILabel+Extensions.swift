@@ -26,4 +26,16 @@ public extension UILabel {
                                                      length: attributedString.length - 1))
         self.attributedText = attributedString
     }
+    
+    func size(forWidth width: CGFloat) -> CGSize {
+        if let attributedText = self.attributedText {
+            return attributedText.size(forWidth: width)
+        } else if let text = self.text,
+                  let font = self.font {
+            return text.size(forWidth: width,
+                             font: font)
+        } else {
+            return .zero
+        }
+    }
 }
