@@ -36,6 +36,17 @@ public extension Calendar {
         return self.date(from: dateComponenets)
     }
     
+    /// Converts other time zone date to current TimeZone date
+    /// - Reference: https://stackoverflow.com/a/60569015/618994
+    /// - Parameter date: Date with other timezone
+    /// - Returns: Date is current timezone
+    func localDate(from date: Date) -> Date? {
+        let components = self.dateComponents(in: TimeZone.current,
+                                             from: date)
+        
+        return self.date(from: components)
+    }
+    
     /// Get age from date
     /// - Parameter date: Date
     /// - Returns: Age
