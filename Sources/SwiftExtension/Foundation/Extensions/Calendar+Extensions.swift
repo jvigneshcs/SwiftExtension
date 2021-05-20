@@ -3,7 +3,7 @@
 //  
 //
 //  Created by Vignesh J on 25/08/20.
-//
+//  Reference: https://stackoverflow.com/a/60569015/618994
 
 import Foundation
 
@@ -37,7 +37,6 @@ public extension Calendar {
     }
     
     /// Converts other time zone date to current TimeZone date
-    /// - Reference: https://stackoverflow.com/a/60569015/618994
     /// - Parameter date: Date with other timezone
     /// - Returns: Date is current timezone
     func localDate(from date: Date) -> Date? {
@@ -54,5 +53,45 @@ public extension Calendar {
         self.dateComponents([.year],
                             from: date,
                             to: Date()).year
+    }
+    
+    /// Convert a Date to another time zone while preserving the day and time from the initial time zone
+    /// - Parameters:
+    ///   - timeZone: TimeZone
+    ///   - date: Date
+    /// - Returns: Converted date
+    func date(bySetting timeZone: TimeZone,
+              of date: Date) -> Date? {
+        self.date(bySetting: self.timeZone,
+                  to: timeZone,
+                  of: date)
+    }
+    
+    /// Convert a Date to the day and time from another time zone while preserving the initial time zone
+    /// - Parameters:
+    ///   - timeZone: TimeZone
+    ///   - date: Date
+    /// - Returns: Converted date
+    func date(bySettingTimeFrom timeZone: TimeZone,
+              of date: Date) -> Date? {
+        self.date(bySetting: timeZone,
+                  to: self.timeZone,
+                  of: date)
+    }
+    
+    /// Convert a Date from one time zone to another time zone
+    /// - Parameters:
+    ///   - from: From TimeZone
+    ///   - to: To TimeZone
+    ///   - date: Date
+    /// - Returns: Converted date
+    private func date(bySetting from: TimeZone,
+                      to: TimeZone,
+                      of date: Date) -> Date? {
+        var components = self.dateComponents(in: from,
+                                             from: date)
+        components.timeZone = to
+        
+        return self.date(from: components)
     }
 }
