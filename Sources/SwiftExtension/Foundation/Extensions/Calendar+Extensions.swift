@@ -85,9 +85,9 @@ public extension Calendar {
     ///   - to: To TimeZone
     ///   - date: Date
     /// - Returns: Converted date
-    private func date(bySetting from: TimeZone,
-                      to: TimeZone,
-                      of date: Date) -> Date? {
+    func date(bySetting from: TimeZone,
+              to: TimeZone,
+              of date: Date) -> Date? {
         var components = self.dateComponents(in: from,
                                              from: date)
         components.timeZone = to
