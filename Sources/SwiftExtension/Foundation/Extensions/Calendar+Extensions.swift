@@ -7,7 +7,7 @@
 
 import Foundation
 
-public extension Calendar {
+extension Calendar {
     
     /// Builds the Date from individual components
     /// - Parameters:
@@ -18,12 +18,12 @@ public extension Calendar {
     ///   - minute: Target minute
     ///   - second: Target second
     /// - Returns: Date
-    func date(bySettingYear year: Int,
-              month: Int,
-              day: Int,
-              hour: Int,
-              minute: Int,
-              second: Int) -> Date? {
+    public func date(bySettingYear year: Int,
+                     month: Int,
+                     day: Int,
+                     hour: Int,
+                     minute: Int,
+                     second: Int) -> Date? {
         var dateComponenets = DateComponents()
         
         dateComponenets.year = year
@@ -39,7 +39,7 @@ public extension Calendar {
     /// Converts other time zone date to current TimeZone date
     /// - Parameter date: Date with other timezone
     /// - Returns: Date is current timezone
-    func localDate(from date: Date) -> Date? {
+    public func localDate(from date: Date) -> Date? {
         let components = self.dateComponents(in: TimeZone.current,
                                              from: date)
         
@@ -49,7 +49,7 @@ public extension Calendar {
     /// Get age from date
     /// - Parameter date: Date
     /// - Returns: Age
-    func age(from date: Date) -> Int? {
+    public func age(from date: Date) -> Int? {
         self.dateComponents([.year],
                             from: date,
                             to: Date()).year
@@ -60,8 +60,8 @@ public extension Calendar {
     ///   - timeZone: TimeZone
     ///   - date: Date
     /// - Returns: Converted date
-    func date(bySetting timeZone: TimeZone,
-              of date: Date) -> Date? {
+    public func date(bySetting timeZone: TimeZone,
+                     of date: Date) -> Date? {
         self.date(bySetting: self.timeZone,
                   to: timeZone,
                   of: date)
@@ -72,8 +72,8 @@ public extension Calendar {
     ///   - timeZone: TimeZone
     ///   - date: Date
     /// - Returns: Converted date
-    func date(bySettingTimeFrom timeZone: TimeZone,
-              of date: Date) -> Date? {
+    public func date(bySettingTimeFrom timeZone: TimeZone,
+                     of date: Date) -> Date? {
         self.date(bySetting: timeZone,
                   to: self.timeZone,
                   of: date)
@@ -85,13 +85,29 @@ public extension Calendar {
     ///   - to: To TimeZone
     ///   - date: Date
     /// - Returns: Converted date
-    func date(bySetting from: TimeZone,
-              to: TimeZone,
-              of date: Date) -> Date? {
+    public func date(bySetting from: TimeZone,
+                     to: TimeZone,
+                     of date: Date) -> Date? {
         var components = self.dateComponents(in: from,
                                              from: date)
         components.timeZone = to
         
         return self.date(from: components)
+    }
+    
+    /// Returns the last moment of a given Date, as a Date.
+    ///
+    /// For example, pass in `Date()`, if you want the end of today.
+    /// Reference: https://stackoverflow.com/a/20158940/618994
+    /// - parameter date: The date to search.
+    /// - returns: The last moment of the given date.
+    public func endOfDay(for date: Date) -> Date? {
+        let startOfDay = self.startOfDay(for: date)
+        var components = DateComponents()
+        components.day = 1
+        components.second = -1
+        
+        return self.date(byAdding: components,
+                         to: startOfDay)
     }
 }
