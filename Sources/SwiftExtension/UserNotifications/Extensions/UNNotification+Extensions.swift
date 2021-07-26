@@ -16,8 +16,11 @@ extension UNNotification {
     /// - Parameters:
     ///   - hours: Number of Hours
     ///   - minutes: Number of Minutes
-    public func snoozeNotification(for hours: Int, minutes: Int) {
-        let content = self.request.content
+    ///   - userInfo: New or updated UNNotificationContent userInfo
+    public func snoozeNotification(for hours: Int,
+                                   minutes: Int,
+                                   userInfo: [AnyHashable: Any]? = nil) {
+        var content = self.request.content
         let identifier = self.request.identifier
         guard let oldTrigger = self.request.trigger as? UNCalendarNotificationTrigger else {
             fatalError("Cannot reschedule notification without calendar trigger.")
@@ -26,6 +29,13 @@ extension UNNotification {
         var components = oldTrigger.dateComponents
         components.hour = (components.hour ?? 0) + hours
         components.minute = (components.minute ?? 0) + minutes
+        
+        if let userInfo = userInfo,
+           let newContent = content.mutableCopy() as? UNMutableNotificationContent {
+            
+            newContent.userInfo = userInfo
+            content = newContent
+        }
 
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
