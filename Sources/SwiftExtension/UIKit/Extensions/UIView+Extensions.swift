@@ -6,14 +6,14 @@
 
 import UIKit
 
-public extension UIView {
+extension UIView {
     
     /// Round the corners
     /// - Parameters:
     ///   - corners: corners to round
     ///   - radius: Corner radius
-    func roundCorners(corners: UIRectCorner,
-                      radius: CGFloat) {
+    public func roundCorners(corners: UIRectCorner,
+                             radius: CGFloat) {
         let path = UIBezierPath(roundedRect: self.bounds,
                                 byRoundingCorners: corners,
                                 cornerRadii: CGSize(width: radius,
@@ -25,7 +25,7 @@ public extension UIView {
     
     /// Removes all the constraints of this view
     /// Reference: https://stackoverflow.com/a/30491911/618994
-    func removeAllConstraints() {
+    public func removeAllConstraints() {
         var _superview = self.superview
         
         while let superview = _superview {

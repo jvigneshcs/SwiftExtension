@@ -7,16 +7,16 @@
 
 import Foundation
 
-public extension FixedWidthInteger {
+extension FixedWidthInteger {
     
     /// Will return the UInt8 array of self
-    var byteArray: [UInt8] {
+    public var byteArray: [UInt8] {
         withUnsafeBytes(of: self,
                         Array.init)
     }
     
     /// Converts the Integer to binary bits in little-endian mode
-    var littleEndianBits: [Bit] {
+    public var littleEndianBits: [Bit] {
         // Make variable
         var bytes = self
         // Fill an array of bits with zeros to the fixed width integer length
@@ -35,12 +35,12 @@ public extension FixedWidthInteger {
     }
     
     /// Converts the Integer to binary bits in big-endian mode
-    var bigEndianBits: [Bit] {
+    public var bigEndianBits: [Bit] {
         Array(self.littleEndianBits.reversed())
     }
     
     /// Converts the Integer to Data
-    var data: Data {
+    public var data: Data {
         var source = self
         return Data(bytes: &source,
                     count: MemoryLayout<Self>.size)

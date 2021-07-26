@@ -7,10 +7,10 @@
 
 import Foundation
 
-public extension Data {
+extension Data {
     
     /// Will return the Array of self
-    var array: [UInt8] {
+    public var array: [UInt8] {
         Array(self)
     }
     
@@ -18,7 +18,7 @@ public extension Data {
     /// - Parameter type: Target instance type which confirms to Decodable
     /// - Throws: Could throw decode error
     /// - Returns: Target instance
-    func initInstance<T>(of type: T.Type) throws -> T? where T : Decodable {
+    public func initInstance<T>(of type: T.Type) throws -> T? where T : Decodable {
         try JSONDecoder().decode(type,
                                  from: self)
     }

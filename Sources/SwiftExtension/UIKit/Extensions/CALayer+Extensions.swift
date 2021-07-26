@@ -8,9 +8,9 @@
 
 import UIKit
 
-public extension CALayer {
+extension CALayer {
     
-    @objc var borderUIColor: UIColor? {
+    @objc public var borderUIColor: UIColor? {
         get {
             guard let borderColor = self.borderColor else { return nil }
             return UIColor(cgColor: borderColor)

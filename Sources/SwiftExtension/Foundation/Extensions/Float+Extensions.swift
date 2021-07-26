@@ -7,25 +7,25 @@
 
 import Foundation
 
-public extension Float {
+extension Float {
     
-    var isNotZero: Bool {
+    public var isNotZero: Bool {
         !self.isZero
     }
     
-    var isValidNumber: Bool {
+    public var isValidNumber: Bool {
         !self.isNaN &&
             self.isFinite
     }
     
-    var isValidAndNotZero: Bool {
+    public var isValidAndNotZero: Bool {
         self.isValidNumber &&
             self.isNotZero
     }
     
     /// Float from SFloat bitPattern UInt16
     /// - Parameter value: UInt16 value
-    init(sFloatBitPattern value: UInt16) {
+    public init(sFloatBitPattern value: UInt16) {
         // Check special values defined by SFLOAT first
         // 0x800 - This is really NRes, "Not at this Resolution"
         // 0x801 - This is really RESERVED FOR FUTURE USE

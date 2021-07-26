@@ -8,9 +8,9 @@
 import Foundation
 import CoreGraphics
 
-public extension NSAttributedString {
+extension NSAttributedString {
     
-    func size(forWidth width: CGFloat) -> CGSize {
+    public func size(forWidth width: CGFloat) -> CGSize {
         let constraintBox = CGSize(width: width,
                                    height: .greatestFiniteMagnitude)
         let rect = self.boundingRect(with: constraintBox,
