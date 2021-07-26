@@ -7,7 +7,7 @@
 
 import XCTest
 @testable import CoreBluetooth
-@testable import SwiftCoreBluetoothExtension
+@testable import CoreBluetoothExtension
 
 final class CBUUIDTests: XCTestCase {
     
