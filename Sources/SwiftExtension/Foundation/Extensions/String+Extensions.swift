@@ -7,7 +7,7 @@
 
 import Foundation
 
-public extension String {
+extension String {
     
     /// Will try to initialize the instance of specified type
     /// - Parameters:
@@ -15,8 +15,8 @@ public extension String {
     ///   - encoding: String Encoding type
     /// - Throws: Could throw error
     /// - Returns: Target instance
-    func initInstance<T>(of type: T.Type,
-                         encoding: String.Encoding = .utf8) throws -> T? where T: Decodable {
+    public func initInstance<T>(of type: T.Type,
+                                encoding: String.Encoding = .utf8) throws -> T? where T: Decodable {
         try self.data(using: encoding)?.initInstance(of: type)
     }
 }

@@ -6,9 +6,9 @@
 
 import UIKit
 
-public extension UIViewController {
+extension UIViewController {
     
-    var enableNavigationBar: Bool {
+    public var enableNavigationBar: Bool {
         get {
             (self.navigationController?.navigationBar.isUserInteractionEnabled == true &&
                 self.navigationController?.interactivePopGestureRecognizer?.isEnabled == true)
@@ -19,9 +19,9 @@ public extension UIViewController {
         }
     }
     
-    func presentAlert(title: String?,
-                      message: String?,
-                      preferredStyle style: UIAlertController.Style = .alert,
+    public func presentAlert(title: String?,
+                             message: String?,
+                             preferredStyle style: UIAlertController.Style = .alert,
                       actions: [UIAlertAction]? = nil,
                       animated: Bool = true,
                       completion: (() -> Void)? = nil) {
@@ -41,14 +41,14 @@ public extension UIViewController {
                      completion: completion)
     }
     
-    func addNotifiction(identifier: String,
-                        title: String? = nil,
-                        subtitle: String? = nil,
-                        body: String,
-                        badge: NSNumber? = nil,
-                        launchImageName: String? = nil,
-                        categoryIdentifier: String? = nil,
-                        threadIdentifier: String? = nil) {
+    public func addNotifiction(identifier: String,
+                               title: String? = nil,
+                               subtitle: String? = nil,
+                               body: String,
+                               badge: NSNumber? = nil,
+                               launchImageName: String? = nil,
+                               categoryIdentifier: String? = nil,
+                               threadIdentifier: String? = nil) {
         if #available(iOS 10.0, *) {
             self.addNotifiction(requestOptions: [.alert, .badge, .sound],
                                 identifier: identifier,
@@ -66,17 +66,17 @@ public extension UIViewController {
     }
     
     @available(iOS 10.0, *)
-    func addNotifiction(requestOptions options: UNAuthorizationOptions,
-                        identifier: String,
-                        title: String?,
-                        subtitle: String?,
-                        body: String,
-                        badge: NSNumber? = nil,
-                        sound: UNNotificationSound? = nil,
-                        launchImageName: String? = nil,
-                        attachments: [UNNotificationAttachment]? = nil,
-                        categoryIdentifier: String? = nil,
-                        threadIdentifier: String? = nil) {
+    public func addNotifiction(requestOptions options: UNAuthorizationOptions,
+                               identifier: String,
+                               title: String?,
+                               subtitle: String?,
+                               body: String,
+                               badge: NSNumber? = nil,
+                               sound: UNNotificationSound? = nil,
+                               launchImageName: String? = nil,
+                               attachments: [UNNotificationAttachment]? = nil,
+                               categoryIdentifier: String? = nil,
+                               threadIdentifier: String? = nil) {
         
         UNUserNotificationCenter.current()
             .requestAuthorization(options: options) { [weak self] (granted, error) in

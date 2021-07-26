@@ -6,9 +6,9 @@
 
 import UIKit
 
-public extension UILabel {
+extension UILabel {
 
-    func addCharacterSpacing(kernValue: CGFloat = 2) {
+    public func addCharacterSpacing(kernValue: CGFloat = 2) {
         guard let labelText = text,
               !labelText.isEmpty else {
             return
@@ -17,8 +17,8 @@ public extension UILabel {
                                  kernValue: kernValue)
     }
 
-    func set(attributedText text: String,
-             kernValue: CGFloat = 2) {
+    public func set(attributedText text: String,
+                    kernValue: CGFloat = 2) {
         let attributedString = NSMutableAttributedString(string: text)
         attributedString.addAttribute(NSAttributedString.Key.kern,
                                       value: kernValue,
@@ -27,7 +27,7 @@ public extension UILabel {
         self.attributedText = attributedString
     }
     
-    func size(forWidth width: CGFloat) -> CGSize {
+    public func size(forWidth width: CGFloat) -> CGSize {
         if let attributedText = self.attributedText {
             return attributedText.size(forWidth: width)
         } else if let text = self.text,

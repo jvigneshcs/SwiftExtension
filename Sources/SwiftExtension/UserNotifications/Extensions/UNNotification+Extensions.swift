@@ -16,7 +16,7 @@ extension UNNotification {
     /// - Parameters:
     ///   - hours: Number of Hours
     ///   - minutes: Number of Minutes
-    func snoozeNotification(for hours: Int, minutes: Int) {
+    public func snoozeNotification(for hours: Int, minutes: Int) {
         let content = self.request.content
         let identifier = self.request.identifier
         guard let oldTrigger = self.request.trigger as? UNCalendarNotificationTrigger else {

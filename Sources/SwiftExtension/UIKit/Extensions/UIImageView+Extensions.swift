@@ -6,9 +6,9 @@
 
 import UIKit
 
-public extension UIImageView {
+extension UIImageView {
     
-    func set(imageColor color: UIColor) {
+    public func set(imageColor color: UIColor) {
         let templateImage = self.image?.withRenderingMode(.alwaysTemplate)
         self.image = templateImage
         self.tintColor = color

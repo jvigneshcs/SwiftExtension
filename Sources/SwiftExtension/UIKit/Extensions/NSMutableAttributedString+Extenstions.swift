@@ -6,22 +6,22 @@
 
 import UIKit
 
-public extension NSMutableAttributedString {
+extension NSMutableAttributedString {
     
-    func set(color: UIColor,
-             for text: String) {
+    public func set(color: UIColor,
+                    for text: String) {
         self.set(attributes: [.foregroundColor: color],
                  for: text)
     }
     
-    func set(font: UIFont,
-             for text: String) {
+    public func set(font: UIFont,
+                    for text: String) {
         self.set(attributes: [.font : font],
                  for: text)
     }
     
-    func set(attributes: [NSAttributedString.Key: Any],
-             for text: String) {
+    public func set(attributes: [NSAttributedString.Key: Any],
+                    for text: String) {
         let range = self.range(of: text)
         guard range.location != NSNotFound else {
             return
