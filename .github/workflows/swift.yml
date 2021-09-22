@@ -1,0 +1,21 @@
+name: Swift
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build Foundation
+      run: swift build -v --target FoundationExtension
+    - name: Build CoreBluetooth
+      run: swift build -v --target CoreBluetoothExtension
+    - name: Build UserNotifications
+      run: swift build -v --target UserNotificationsExtension
