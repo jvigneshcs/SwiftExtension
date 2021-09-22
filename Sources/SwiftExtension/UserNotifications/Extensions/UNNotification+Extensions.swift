@@ -7,7 +7,7 @@
 //
 import UserNotifications
 
-@available(iOS 10.0, *)
+@available(iOS 10.0, macOS 10.14, *)
 extension UNNotification {
     
     /// Snoozes the notification for specified duration
