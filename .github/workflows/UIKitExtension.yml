@@ -1,0 +1,22 @@
+name: Swift
+
+on:
+  push:
+    paths:
+      - 'Sources/SwiftExtension/UIKit/**'
+  pull_request:
+    paths:
+      - 'Sources/SwiftExtension/UIKit/**'
+
+jobs:
+  build:
+    name: Build UIKitExtension library in SwiftExtension package
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Force XCode 13.0
+      run: sudo xcode-select -switch /Applications/Xcode_13.0.app
+    - name: Building UIKitExtension library
+      run: exec ./buildUIKitExtension.sh
