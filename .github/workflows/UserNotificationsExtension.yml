@@ -1,0 +1,21 @@
+name: Build UserNotificationsExtension
+
+on:
+  push:
+    paths:
+      - 'Sources/SwiftExtension/UserNotifications/**'
+  pull_request:
+    paths:
+      - 'Sources/SwiftExtension/UserNotifications/**'
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build UserNotifications
+      run: swift build -v --target UserNotificationsExtension
+
+

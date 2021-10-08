@@ -1,0 +1,21 @@
+name: Build CoreBluetoothExtension
+
+on:
+  push:
+    paths:
+      - 'Sources/SwiftExtension/CoreBluetooth/**'
+  pull_request:
+    paths:
+      - 'Sources/SwiftExtension/CoreBluetooth/**'
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build CoreBluetooth
+      run: swift build -v --target CoreBluetoothExtension
+
+

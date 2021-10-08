@@ -1,0 +1,20 @@
+name: Build FoundationExtension
+
+on:
+  push:
+    paths:
+      - 'Sources/SwiftExtension/Foundation/**'
+  pull_request:
+    paths:
+      - 'Sources/SwiftExtension/Foundation/**'
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build Foundation
+      run: swift build -v --target FoundationExtension
+
