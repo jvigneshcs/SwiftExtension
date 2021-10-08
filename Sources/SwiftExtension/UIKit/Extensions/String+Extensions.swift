@@ -10,7 +10,7 @@ import UIKit
 extension String {
     
     public func size(forWidth width: CGFloat,
-              font: UIFont) -> CGSize {
+                     font: UIFont) -> CGSize {
         let attributedText = NSAttributedString(string: self,
                                                 attributes: [.font: font])
         
