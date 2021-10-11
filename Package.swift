@@ -46,10 +46,10 @@ let package = Package(
         .testTarget(
             name: "FoundationExtensionTests",
             dependencies: ["FoundationExtension"],
-            path: "Tests/SwiftExtensionTests/Foundation"),
+            path: "Tests/FoundationExtensionTests"),
         .testTarget(
             name: "CoreBluetoothExtensionTests",
             dependencies: ["CoreBluetoothExtension"],
-            path: "Tests/SwiftExtensionTests/CoreBluetooth"),
+            path: "Tests/CoreBluetoothExtensionTests"),
     ]
 )
